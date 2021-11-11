@@ -6,7 +6,7 @@ const PlusTenChildThree = () => {
 
   return (
     <section>
-      <h3>Second Plus Ten Child</h3>
+      <h3>Third Plus Ten Child</h3>
       <button onClick={incrementByTen}>Plus Ten #3</button>
       {plusTen}
     </section>

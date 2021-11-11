@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Child from '../child/Child';
 import { useCounterContext } from '../../state/CounterContext';
 import PlusTenParent from '../plusTen/PlusTenParent';
+import PlusTwentyParent from '../plusTwenty/PlusTwentyParent';
 
 const App = () => {
   const [negCounter, setNegCounter] = useState(0);
@@ -34,8 +35,11 @@ const App = () => {
         <button onClick={decrementCount}>Negative One to App</button>
         {negCounter}
         <Child />
-        <hr />
-        <PlusTenParent />
+        <span>
+          <PlusTenParent />
+          <hr />
+          <PlusTwentyParent />
+        </span>
     </main>
   )
 };

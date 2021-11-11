@@ -5,6 +5,7 @@
 }
 
 main {
+  height: 100vh;
   padding: 0.5rem;
 }
 
@@ -15,6 +16,7 @@ section {
 button {
   margin: 0.5rem 0;
   padding: 0.5rem;
+  background-color: hsl(108, 39%, 75%, 0.75);
 }
 
 button + button {
@@ -22,8 +24,13 @@ button + button {
 }
 
 main {
-  border: medium solid black;
-  background-color: hsl(120, 100%, 25%, 0.75);
+  border: medium solid darkslateblue;
+  background: linear-gradient(
+    135deg,
+    hsl(120, 100%, 25%, 0.75),
+    hsl(20, 100%, 75%, 0.75),
+    hsl(320, 100%, 25%, 0.75)
+  );
   color: orange;
 }
 
@@ -40,10 +47,28 @@ section > section {
 }
 
 div {
-  background-color: orchid;
+  background-color: hsl(302, 59%, 65%, 0.5);
   color: purple;
 }
 
 div > section > button {
   margin: 0.5rem 1rem;
+}
+
+main div div {
+  border: medium solid red;
+  margin: 1rem;
+}
+
+main div div button {
+  margin: 0.5rem 1rem;
+}
+
+main span {
+  border: medium solid black;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
 }
