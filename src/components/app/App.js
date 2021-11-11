@@ -16,12 +16,12 @@ const App = () => {
 
   useEffect(() => {
     console.log('%cHello from useEffect on page load.', 'color: green');
-    // The empty array means this will only run when the page loads.
+    // The empty dependency array means this will only run when the page loads.
   }, []);
   
   useEffect(() => {
     console.log('%cHola from useEffect when page loads and when any state changes.', 'color: blue');
-    // No empty array means this will run when the page loads and run again every time that any state changes.
+    // No dependency array means this will run when the page loads and run again every time that any state changes.
   });
 
   useEffect(() => {
