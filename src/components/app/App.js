@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     if(counter) console.log('%cHowdy from useEffect when the counter changes.', 'color: purple');
-    // This will only when the counter state changes.
+    // This will only run when the counter state changes.
   }, [counter]);
 
   return (
