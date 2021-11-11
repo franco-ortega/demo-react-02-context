@@ -4,11 +4,7 @@ import { useCounterContext } from '../../state/CounterContext';
 
 const App = () => {
   const [negCounter, setNegCounter] = useState(0);
-  const {counter, setCounter } = useCounterContext();
-
-  const incrementCount = () => {
-    setCounter(prevState => prevState + 1);
-  };
+  const { counter, incrementCount } = useCounterContext();
 
   const decrementCount = () => {
     setNegCounter(prevState => prevState - 1);
