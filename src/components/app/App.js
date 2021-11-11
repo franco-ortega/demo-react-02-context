@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Child from '../child/Child';
 import { useCounterContext } from '../../state/CounterContext';
+import PlusTenParent from '../plusTen/PlusTenParent';
 
 const App = () => {
   const [negCounter, setNegCounter] = useState(0);
@@ -28,10 +29,13 @@ const App = () => {
   return (
     <main>
         <h1>Hello App</h1>
+        <p>(uses context to share same state across multiple components)</p>
         <button onClick={incrementCount}>Plus One from App to Grandchild</button>
         <button onClick={decrementCount}>Negative One to App</button>
         {negCounter}
         <Child />
+        <hr />
+        <PlusTenParent />
     </main>
   )
 };

@@ -4,10 +4,12 @@
   padding: 0;
 }
 
-main,
+main {
+  padding: 0.5rem;
+}
+
 section {
   margin: 1rem;
-  padding: 0.5rem;
 }
 
 button {
@@ -35,4 +37,13 @@ section > section {
   border: medium solid black;
   background-color: hsl(60, 100%, 50%, 0.85);
   color: brown;
+}
+
+div {
+  background-color: orchid;
+  color: purple;
+}
+
+div > section > button {
+  margin: 0.5rem 1rem;
 }
