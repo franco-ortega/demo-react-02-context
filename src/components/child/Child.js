@@ -8,7 +8,7 @@ const Child = () => {
   return (
     <section>
       <h2>Child</h2>
-      <button onClick={incrementCount}>Plus One to Grandchild</button>
+      <button onClick={incrementCount}>Plus One from Child to Grandchild</button>
       <Grandchild />
     </section>
   )

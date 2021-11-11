@@ -28,7 +28,7 @@ const App = () => {
   return (
     <main>
         <h1>Hello App</h1>
-        <button onClick={incrementCount}>Plus One to Grandchild</button>
+        <button onClick={incrementCount}>Plus One from App to Grandchild</button>
         <button onClick={decrementCount}>Negative One to App</button>
         {negCounter}
         <Child />
