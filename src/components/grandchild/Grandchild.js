@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCounterContext } from './CounterContext';
+import { useCounterContext } from '../../state/CounterContext';
 
 const Grandchild = () => {
   const { counter } = useCounterContext();

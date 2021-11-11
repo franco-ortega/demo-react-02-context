@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/app/App';
 import reportWebVitals from './reportWebVitals';
-import { CounterProvider } from './CounterContext';
+import { CounterProvider } from './state/CounterContext';
 
 ReactDOM.render(
   <React.StrictMode>

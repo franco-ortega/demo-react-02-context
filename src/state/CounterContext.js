@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from "react";
 
-
 const CounterContext = createContext(null);
 
 export const CounterProvider = ({ children }) => {

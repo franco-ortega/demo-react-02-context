@@ -1,5 +1,5 @@
 import React from 'react';
-import Grandchild from './Grandchild';
+import Grandchild from '../grandchild/Grandchild';
 
 const Child = () => {
   
