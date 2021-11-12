@@ -5,11 +5,11 @@ import PlusTenParent from '../plusTen/PlusTenParent';
 import PlusTwentyParent from '../plusTwenty/PlusTwentyParent';
 
 const App = () => {
-  const [negCounter, setNegCounter] = useState(0);
+  const [negativeCounter, setNegativeCounter] = useState(0);
   const { counter, incrementCount } = useCounterContext();
 
   const decrementCount = () => {
-    setNegCounter(prevState => prevState - 1);
+    setNegativeCounter(prevState => prevState - 1);
   };
 
   useEffect(() => {
@@ -18,8 +18,8 @@ const App = () => {
   }, []);
   
   useEffect(() => {
-    console.log('%c Hola from useEffect when page loads and when any state changes.', 'color: blue');
-    // No dependency array means this will run when the page loads and run again every time that any state changes.
+    console.log('%c Hola from useEffect when page loads and when any Context state changes.', 'color: blue');
+    // No dependency array means this will run when the page loads and run again every time that any Context state changes.
   });
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const App = () => {
         <p>(uses context to share same state across multiple components)</p>
         <button onClick={incrementCount}>Plus One from App to Grandchild</button>
         <button onClick={decrementCount}>Negative One to App</button>
-        {negCounter}
+        {negativeCounter}
         <Child />
         <span>
           <PlusTenParent />

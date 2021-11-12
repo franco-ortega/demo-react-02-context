@@ -8,7 +8,7 @@ const PlusTwentyParent = () => {
   const { plusTwenty, incrementByTwenty } = usePlusTwenty();
 
   useEffect(() => {
-    console.log('%c Hi hi hi from PlusTwentyParent!!!!', 'color: orangered');
+    console.log('%c Hi hi hi from PlusTwentyParent on page load and when my any of my children update the state that I passed them via props! I am using a custom hook, but they are all getting the same state from me!!!', 'color: orangered');
   }, [plusTwenty]);
 
   return (
