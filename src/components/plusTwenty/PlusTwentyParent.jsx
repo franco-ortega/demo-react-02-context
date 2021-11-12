@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { usePlusTwenty } from '../../hooks/usePlusTwenty'
 import PlusTwentyChildOne from './PlusTwentyChildOne'
 import PlusTwentyChildTwo from './PlusTwentyChildTwo'
@@ -6,6 +6,10 @@ import PlusTwentyChildThree from './PlusTwentyChildThree'
 
 const PlusTwentyParent = () => {
   const { plusTwenty, incrementByTwenty } = usePlusTwenty();
+
+  useEffect(() => {
+    console.log('%c Hi hi hi from PlusTwentyParent!!!!', 'color: orangered');
+  }, [plusTwenty]);
 
   return (
     <div>

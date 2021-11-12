@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { usePlusTen } from '../../hooks/usePlusTen'
 
 const PlusTenChildOne = () => {
   const { plusTen, incrementByTen } = usePlusTen();
+
+  useEffect(() => {
+    console.log('%cHey hey from PlusTenChildOne', 'color: gray');
+  }, [plusTen]);
 
   return (
     <section>

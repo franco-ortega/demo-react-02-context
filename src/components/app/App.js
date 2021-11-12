@@ -18,7 +18,7 @@ const App = () => {
   }, []);
   
   useEffect(() => {
-    console.log('%cHola from useEffect when page loads and when any state changes.', 'color: blue');
+    console.log('%c Hola from useEffect when page loads and when any state changes.', 'color: blue');
     // No dependency array means this will run when the page loads and run again every time that any state changes.
   });
 
