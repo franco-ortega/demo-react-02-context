@@ -4,8 +4,11 @@
   padding: 0;
 }
 
-main {
+body {
   height: 100vh;
+}
+
+main {
   padding: 0.5rem;
 }
 
@@ -51,6 +54,10 @@ div {
   color: purple;
 }
 
+span div div {
+  background-color: hsl(0, 0%, 50%, 0.5);
+}
+
 div > section > button {
   margin: 0.5rem 1rem;
 }
@@ -64,7 +71,7 @@ main div div button {
   margin: 0.5rem 1rem;
 }
 
-main span {
+span {
   border: medium solid black;
   width: fit-content;
   margin: auto;
